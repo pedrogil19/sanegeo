@@ -146,5 +146,18 @@ iframe {
 }
 
 .fundocinza {
-    background-color: gainsboro;
+    background-color: rgb(242, 242, 242);
+}
+
+h1{
+    font-weight: 200;
+    font-size: xx-large;
+}
+
+.grade {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
 }
