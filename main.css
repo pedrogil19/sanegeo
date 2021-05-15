@@ -1,0 +1,146 @@
+body { 
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+  }
+
+.logo {
+    padding: 0px 0px 0px 10px;
+}
+
+.header {
+  z-index: 1;
+  box-shadow: 0px 1px 3px 3px gray;
+  background-color: white;
+  height: 100px;
+  position: fixed;
+  width: 100%;
+}
+
+.header a {
+    float: left;
+    color:black;
+    text-align: center;
+    padding: 22px 40px 22px 40px;
+    text-decoration: none;
+    font-size: 1.25rem; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+
+.header-right {
+    float: right;
+    padding: 10px 30px;
+}
+
+iframe {
+    z-index:-1;
+    top:0;
+    left:0;
+    width:100%; 
+    height:850px;
+    padding-top: 100px;
+}
+
+#velholista {
+    /* height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    padding: 10px 30px 10px 5px;
+    background-color: lightblue;
+    object-fit: cover;
+    object-position: 60% 10%;*/
+    position: relative;
+    float: left;
+    /* left: -40px; */
+}
+
+#linha1 {
+    position: relative;
+    top: -250px;
+    left: -70px;
+    z-index:-1;
+}
+
+#texto1 {
+    font-size: larger;
+    position: relative;
+    top: -380px;
+    left: 850px;
+    max-width: 500px;
+    word-wrap: break-word;
+}
+
+#linha2 {
+    position: relative;
+    top: 0px;
+    left: -570px;
+    z-index:-1;
+}
+
+#texto2 {
+    font-size: larger;
+    position: relative;
+    top: -241px;
+    left: 670px;
+    max-width: 400px;
+    word-wrap: break-word;
+    padding-bottom: 30px;
+}
+
+#box{
+    height: 160px;
+    background-color: rgb(61, 107, 181);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+#texto-legal {
+    text-align: center;
+    max-width: 850px;
+    word-wrap: break-word;
+    font-size: larger;
+    font-style: italic;
+    color: white;
+}
+
+#techroom {
+    position: relative;
+    float: right;
+}
+
+#linha3 {
+    position: relative;
+    right: -640px;
+    z-index:-1;
+}
+
+#linha4 {
+    position: relative;
+    top: 300px;
+    left: 370px;
+    z-index:-1;
+}
+
+#essaimagem {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    padding-top: 100px;
+}
+
+#modulostitulo {
+    color: blue;
+    text-align: center;
+}
+
+#modulos {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(assets/agua.png) 30 stretch;
+}
