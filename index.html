@@ -4,13 +4,14 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Sanegeo</title>
+    <script src="https://kit.fontawesome.com/3d77bcf6c3.js" crossorigin="anonymous"></script>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 <body>
     <div class="header">
-        <img src="https://i.ytimg.com/vi/Bor5lkRyeGo/hqdefault.jpg" class="logo" width="288" height="91">
+        <img src="assets/sanegeo_logo.PNG" class="logo">
         <div class="header-right">
             <a href="#home">Página Inicial</a>
             <a href="#solucao">Solução</a>
@@ -51,30 +52,148 @@
         <div class="fundocinza">
         <h1 id="modulostitulo">MÓDULOS DO SISTEMA</h1>
         <img id="modulos" src="assets/modulosagua.png">
-        </div>
+        <!--<div class="grade">
+            <div class="grid-item">
+                <i class="fas fa-clipboard-list"></i>
+                <h6>CADASTRO TÉCNICO</h6>
+                <div>Permite a integração de todas
+                    as bases de dados, dando
+                    suporte aos demais módulos
+                    do sistema
+                </div>
+            </div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">9</div>
+            <div class="grid-item">10</div>
+            <div class="grid-item">11</div>
+            <div class="grid-item">12</div>
+        </div> -->
         <div class="container">
-            <div class="row">
-              <div class="col">
-                1 of 2
+            <div class="row linha">
+              <div class="col-sm">
+                <i class="grid-item fa-3x fas fa-clipboard-list icon"></i>
+                <h6 class="grid-item">CADASTRO TÉCNICO</h6>
+                <div class="grid-item">Permite a integração de todas
+                    as bases de dados, dando
+                    suporte aos demais módulos
+                    do sistema
+                </div>
               </div>
-              <div class="col">
-                2 of 2
+              <div class="col-sm">
+                <i class="grid-item fa-3x fas fa-street-view icon"></i>
+                <h6 class="grid-item">ATENDIMENTO</h6>
+                <div class="grid-item">Visualiza todas as ocorrências
+                    com status em tempo real,
+                    imagens e ativação de
+                    religação de urgência
+                </div>
               </div>
-              <div class="col">
-                2 of 2
+              <div class="col-sm">
+                <i class="grid-item fa-3x icon fas fa-tools"></i>
+                <h6 class="grid-item">OPERAÇÕES</h6>
+                <div class="grid-item">Gerencia os serviços de campo
+                    com georreferenciamento e
+                    informações de várias fases de
+                    atendimento
+                </div>
+              </div>
+              <div class="col-sm">
+                <i class="grid-item fa-3x icon fas fa-mobile-alt"></i>
+                <h6 class="grid-item">APP MOBILE</h6>
+                <div class="grid-item">Elimina o uso de papéis,
+                    permite atendimento off-line
+                    e controla o tempo de
+                    execução das ocorrências
+                </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col">
-                1 of 3
-              </div>
-              <div class="col">
-                2 of 3
-              </div>
-              <div class="col">
-                3 of 3
-              </div>
+            <div class="row linha">
+                <div class="col-sm">
+                    <i class="grid-item fa-3x icon2 fas fa-tint"></i>
+                    <h6 class="grid-item">SIMULAÇÃO HIDRÁULICA</h6>
+                    <div class="grid-item">Simula cenários operacionais ,
+                        avaliando seus impactos e
+                        auxiliando na definição do
+                        balanço hídrico                        
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <i class="grid-item fa-3x icon2 fas fa-cogs"></i>
+                    <h6 class="grid-item">CONFIGURAÇÕES</h6>
+                    <div class="grid-item">Executa-se todos os cadastros
+                        e parametrizações
+                        necessárias ao
+                        funcionamento do sistema
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <i class="grid-item fa-3x icon2 fas fa-search"></i>
+                    <h6 class="grid-item">CORTES E RELIGAÇÕES</h6>
+                    <div class="grid-item">Gerencia as ocorrências em tempo
+                        real, com georreferenciamento,
+                        integrando com o sistema comercial
+                        e status de débitos
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <i class="grid-item fa-3x icon2 fas fa-luggage-cart"></i>
+                    <h6 class="grid-item">OBRAS</h6>
+                    <div class="grid-item">Possibilita o
+                        acompanhamento dos
+                        contratos das obras por status
+                        e georreferenciamento 
+                    </div>
+                </div>
+            </div>
+            <div class="row linha">
+                <div class="col-sm">
+                    <i class="grid-item fa-3x icon3 fas fa-exclamation-triangle"></i>
+                    <h6 class="grid-item">TELEMETRIA/PARÂMETROS HIDRÁULICOS </h6>
+                    <div class="grid-item">Gerencia os equipamentos de
+                        medição, alarmes e comandos de
+                        ligação/desligamento, com análise
+                        gráfica dos mesmos                        
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <i class="grid-item fa-3x icon3 fas fa-hand-holding-usd"></i>
+                    <h6 class="grid-item">RECEITAS FUTURAS</h6>
+                    <div class="grid-item">Projeta a receita gerada, a
+                        demanda de água e de coleta
+                        de esgoto, com a implantação
+                        dos novos empreendimentos
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <i class="grid-item fa-3x icon3 fas fa-weight"></i>
+                    <h6 class="grid-item">BI</h6>
+                    <div class="grid-item">Permite o monitoramento de
+                        performance e análise de
+                        dados a partir da visualização
+                        interativa de painéis digitais 
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <i class="grid-item fa-3x icon3 fas fa-chart-line"></i>
+                    <h6 class="grid-item">INDICADORES IWA</h6>
+                    <div class="grid-item">Realiza o cálculo
+                        automatizado do balanço
+                        hídrico e dos indicadores da
+                        IWA
+                    </div>
+                </div>
             </div>
           </div>
+        </div>
+    </div>
+    <div class="resultados">
+    <a name="resultados"></a>        
+    </div>
 </body>
 </html>

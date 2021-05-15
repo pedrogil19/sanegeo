@@ -5,6 +5,8 @@ body {
 
 .logo {
     padding: 0px 0px 0px 10px;
+    width: 240px;
+    height: 89px;
 }
 
 .header {
@@ -14,6 +16,7 @@ body {
   height: 100px;
   position: fixed;
   width: 100%;
+  padding-top: 3px;
 }
 
 .header a {
@@ -126,22 +129,23 @@ iframe {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 55%;
     padding-top: 100px;
 }
 
 #modulostitulo {
-    color: blue;
     text-align: center;
+    font-weight: 200;
+    padding-top: 25px;
 }
 
 #modulos {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 60%;
     border: 10px solid transparent;
-    padding: 15px;
+    padding-top: 15px;
     border-image: url(assets/agua.png) 30 stretch;
 }
 
@@ -150,14 +154,37 @@ iframe {
 }
 
 h1{
-    font-weight: 200;
     font-size: xx-large;
+    color: rgb(61, 107, 181);
 }
 
-.grade {
+/*.grade {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto auto auto auto;
     grid-gap: 10px;
-    background-color: #2196F3;
     padding: 10px;
+}*/ 
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  word-wrap: break-word;
+  text-align: center;
+  padding: 10px 30px 10px 0px;
+}
+
+.icon{
+    color: rgb(61, 107, 181);
+}
+
+.icon2{
+    color: lightblue;
+}
+
+.icon3{
+    color: cyan;    
+}
+
+.linha {
+    padding: 70px 30px 0px 30px;
 }
