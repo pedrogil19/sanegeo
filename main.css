@@ -144,3 +144,7 @@ iframe {
     padding: 15px;
     border-image: url(assets/agua.png) 30 stretch;
 }
+
+.fundocinza {
+    background-color: gainsboro;
+}
