@@ -188,3 +188,77 @@ h1{
 .linha {
     padding: 70px 30px 0px 30px;
 }
+
+.ipad {
+    position: relative;
+    grid-row: 3 / 1;
+}
+
+.ipadimg {
+    height: 820px;
+    width: 600px;
+    border-radius: 5% 5% 5% 5%;
+    z-index: -1;
+    padding: 30px 30px 30px 30px;
+}
+
+.textoipad {
+    font-size: x-large;
+    position: absolute;
+    top: 400px;
+    left: 280px;
+    max-width: 250px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.ipadlogo {
+    position: absolute;
+    top: 670px;
+    left: 390px;
+    width: 100px;
+    height: 38px;
+}
+
+.item {
+    margin-bottom: -30px -30px -30px -30px;
+}
+
+.grid-item2 {
+  display: flex;
+  justify-content: center;
+  word-wrap: break-word;
+  text-align: center;
+  padding: 10px 30px 10px 0px;
+  font-size: medium;
+}
+
+.linedata{
+    padding-top: 100px;
+}
+
+.textolinedata1 {
+    font-size: large;
+    position: relative;
+    top: -790px;
+    left: 330px;
+    max-width: 800px;
+    word-wrap: break-word;
+    padding-bottom: 30px;
+}
+
+.textolinedata2 {
+    font-size: large;
+    position: relative;
+    top: -640px;
+    left: 790px;
+    max-width: 500px;
+    word-wrap: break-word;
+    padding-bottom: 30px;
+}
+
+.agua1 {
+    position: relative;
+    float: right;
+    height: 1000px;
+}
