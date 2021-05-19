@@ -53,18 +53,23 @@ iframe {
     padding-top: 100px;
 }
 
+@media screen and (max-width:1200px) {
+    iframe {
+        height: 100%;
+        width: 100%;
+    }
+}
+
 /* Imagem com os textos lá */
 #velholista {
-    /* height: 450px;
-    width: 450px;
-    border-radius: 50%;
-    padding: 10px 30px 10px 5px;
-    background-color: lightblue;
-    object-fit: cover;
-    object-position: 60% 10%;*/
     position: relative;
-    float: left;
-    /* left: -40px; */
+    float: left
+}
+
+@media screen and (max-width: 1200px) {
+    #velholista {
+        display:none;
+    }
 }
 
 #linha1 {
@@ -217,6 +222,12 @@ h1{
     padding-top: 200px;
 }
 
+@media screen and (max-width: 1200px) {
+    .ipad {
+        display: none;
+    }
+}
+
 .ipad {
     position: relative;
 }
@@ -250,30 +261,13 @@ h1{
   
 
 .ipadimg {
-    height: 820px;
-    width: 600px;
+    height: 846px;
+    width: 647px;
     border-radius: 5% 5% 5% 5%;
     z-index: -1;
     padding: 30px 30px 30px 30px;
 }
 
-.textoipad {
-    font-size: x-large;
-    position: absolute;
-    top: 400px;
-    left: 280px;
-    max-width: 250px;
-    word-wrap: break-word;
-    text-align: center;
-}
-
-.ipadlogo {
-    position: absolute;
-    top: 670px;
-    left: 390px;
-    width: 100px;
-    height: 38px;
-}
 
 
 /* Linedata */
@@ -357,23 +351,26 @@ h1{
 }
 
 /* Logos com circulos */
-/* TODO: Posicionar direito sem usar position:relative
-senão cria um espaço branco vazio no final da div */
 
 .logoevo {
+    position: relative;
     float: right;
+    bottom: -212px;
 }
 
 .linhaazul {
+    position: relative;
     top: 30px;
-    right: -600px;
+    right: -570px;
     float: right;
+    margin: auto;
 }
 
 .textosolto {
+    position: relative;
     font-size: large;
-    top: -730px;
-    right: -500px;
+    top: 30px;
+    right: -400px;
     max-width: 600px;
     word-wrap: break-word;
     text-align: center;
@@ -382,8 +379,9 @@ senão cria um espaço branco vazio no final da div */
 }
 
 .textoaneel {
+    position: relative;
     font-size: large;
-    top: -350px;
+    top: 420px;
     left: 520px;
     max-width: 600px;
     word-wrap: break-word;
@@ -391,17 +389,62 @@ senão cria um espaço branco vazio no final da div */
     color: rgb(89, 89, 89);
 }
 
+/*
+.textomapa4 {
+    font-size: large;
+    position: relative;
+    top: 400px;
+    left: 290px;
+    word-wrap: break-word;
+    text-align: right;
+    color: rgb(89, 89, 89);
+    margin: auto;
+}
+*/
+
 .textoevo {
     font-size: large;
-    top: -125px;
-    left: -50px;
+    position: relative;
+    top: 590px;
+    right: 60px;
     max-width: 600px;
     word-wrap: break-word;
     text-align: right;
     color: rgb(89, 89, 89);
     margin: auto;
 }
-
-hr {
-    border-color: blue;
+.line {
+    border-bottom: 1px solid blue;
+    display: block;
+    margin: auto;
 }
+
+/* Circulos */
+
+.circulos {
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ -ms-box-sizing: border-box;
+ -webkit-box-sizing: border-box;    
+}
+
+.circulo1 {
+    float:left;
+}
+
+.circulo2 {
+    position: relative;
+    float: right;
+}
+
+.circulo3 {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -170px;
+}
+
+/* Página de Contato */
