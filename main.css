@@ -261,8 +261,7 @@ h1{
   
 
 .ipadimg {
-    height: 846px;
-    width: 647px;
+    height: 70%;
     border-radius: 5% 5% 5% 5%;
     z-index: -1;
     padding: 30px 30px 30px 30px;
@@ -275,6 +274,7 @@ h1{
 .linedata{
     position: relative;
     padding-top: 100px;
+    margin-top: 100px;
     height: 800px;
 }
 
@@ -353,23 +353,28 @@ h1{
 /* Logos com circulos */
 
 .logoevo {
-    position: relative;
     float: right;
-    bottom: -212px;
+}
+
+.logoaneel {
+    overflow: hidden;
+    float: left;
 }
 
 .linhaazul {
-    position: relative;
     top: 30px;
     right: -570px;
     float: right;
-    margin: auto;
+}
+
+.evo {
+    padding-top: -50px;
 }
 
 .textosolto {
     position: relative;
     font-size: large;
-    top: 30px;
+    top: 0px;
     right: -400px;
     max-width: 600px;
     word-wrap: break-word;
@@ -381,42 +386,29 @@ h1{
 .textoaneel {
     position: relative;
     font-size: large;
-    top: 420px;
-    left: 520px;
-    max-width: 600px;
+    top: 170px;
+    left: 0px;
     word-wrap: break-word;
     text-align: left;
     color: rgb(89, 89, 89);
 }
 
-/*
-.textomapa4 {
+ .textoevo {
     font-size: large;
     position: relative;
-    top: 400px;
-    left: 290px;
+    top: 240px;
+    right: 0px;
     word-wrap: break-word;
     text-align: right;
     color: rgb(89, 89, 89);
-    margin: auto;
-}
-*/
-
-.textoevo {
-    font-size: large;
-    position: relative;
-    top: 590px;
-    right: 60px;
-    max-width: 600px;
-    word-wrap: break-word;
-    text-align: right;
-    color: rgb(89, 89, 89);
-    margin: auto;
-}
+} 
 .line {
     border-bottom: 1px solid blue;
     display: block;
     margin: auto;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* Circulos */
@@ -445,6 +437,7 @@ h1{
     word-wrap: break-word;
     text-align: center;
     color:rgb(89, 89, 89);
+    width: 75%;
 }
 
 .cite:before {
@@ -458,10 +451,11 @@ h1{
 .name {
     font-size: small;
     color:rgb(89, 89, 89);
-    max-width: 100px;
+    max-width: 200px;
     word-wrap: break-word;
     text-align: center;
     margin-top: 10px;
+    margin-left: 90px;
 }
 
 .citacao1 {
@@ -482,14 +476,21 @@ h1{
 
 .citacao3 {
     position: relative;
-    z-index: 1;
     height: 0;
+    z-index: 1;
+    right: -38em;
+    top: 100px;
     margin: auto;
-    top: 700px;
-    left: 650px;
 }
 
 /* Página de Contato */
 
-
+.zapzap {
+    border-radius: 1%;
+    border-color: black;
+    border-width: 3px;
+    float: right;
+    border-style: solid;
+    margin: auto;
+}
 
