@@ -1,7 +1,6 @@
 body { 
     overflow-x: hidden; 
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
-      
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;        
   }
 
   
@@ -66,17 +65,10 @@ iframe {
     float: left
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
     #velholista {
         display:none;
     }
-}
-
-#linha1 {
-    position: relative;
-    top: -250px;
-    left: -70px;
-    z-index:-1;
 }
 
 #texto1 {
@@ -89,11 +81,18 @@ iframe {
     color: rgb(89, 89, 89);
 }
 
-#linha2 {
-    position: relative;
-    top: 0px;
-    left: -570px;
-    z-index:-1;
+
+@media (max-width: 1200px){
+    #texto1 {
+        top: 0;
+        left: 0;
+        float: left;
+        font-size: larger;
+        max-width: 500px;
+        word-wrap: break-word;
+        color: rgb(89, 89, 89);
+        text-align: center;
+    }
 }
 
 #texto2 {
@@ -107,7 +106,19 @@ iframe {
     color: rgb(89, 89, 89);
 }
 
-
+@media (max-width: 1200px){
+    #texto2 {
+        float: left;
+        top: 0;
+        left: 0;
+        padding-top: 30px;
+        font-size: larger;
+        max-width: 400px;
+        word-wrap: break-word;
+        color: rgb(89, 89, 89);
+        text-align: center;
+    }
+}
 
 #box{
     height: 160px;
@@ -125,10 +136,33 @@ iframe {
     font-style: italic;
     color: white;
 }
-
-#techroom {
+ 
+/* Imagem das linhas 2 */
+.techroom {
     position: relative;
     float: right;
+    right: -30px;
+}
+
+.textosala1 {
+    font-size: large;
+    color: rgb(89, 89, 89);
+    word-wrap: break-word;
+    max-width: 400px;
+    text-align:right;
+    position: relative;
+    top: 130px;
+}
+
+.textosala2 {
+    position: relative;
+    top: -140px;
+    font-size: large;
+    color: rgb(89, 89, 89);
+    margin: auto;
+    word-wrap: break-word;
+    max-width: 400px;
+    text-align:right;
 }
 
 #linha3 {
@@ -218,6 +252,18 @@ h1{
     font-weight: 200;
 }
 
+.azul {
+    color: rgb(61, 107, 181);
+}
+
+.azulclaro {
+    color: lightblue;
+}
+
+.verde {
+    color: darkgreen;
+}
+
 .ipadgrid {
     padding-top: 200px;
 }
@@ -256,7 +302,6 @@ h1{
     text-align: center;
     margin-left: -30px;
     padding: 10px 30px 10px 10px;
-    color: rgb(89, 89, 89);
   }
   
 
@@ -349,7 +394,6 @@ h1{
     color: rgb(89, 89, 89);
     margin: auto;
 }
-
 /* Logos com circulos */
 
 .logoevo {
