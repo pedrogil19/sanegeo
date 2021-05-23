@@ -30,15 +30,17 @@
             allowfullscreen></iframe>
     </div>
     <br>
-    <div id="solucao" class="solucao" style="padding-top: 170px">
-        <img id="velholista" src="assets/combinedassets1.PNG">
+    <div id="solucao" class="solucao" style="padding-top: 0px">
+        <div id="texto2">Oferecemos soluções práticas com base nas
+            especificidades do mercado brasileiro de
+            saneamento básico</div>
+        <img class="velholista" src="assets/combinedassets1.PNG">
+        <img class="circuloazul" src="assets/circuloazul.png">
         <div id="texto1">O Sistema de Eficiência Operacional SANEGEO proporciona a
             gestão da operação, manutenção e o planejamento da
             evolução de redes de água e esgoto com informações
             atualizadas e em tempo real</div>
-        <div id="texto2">Oferecemos soluções práticas com base nas
-            especificidades do mercado brasileiro de
-            saneamento básico</div>
+
         <div id="box">
             <div id="texto-legal" class="mb-3">
                 TER UM SISTEMA DE GESTÃO OPERACIONAL INTEGRADO É MUITO MAIS QUE ATUALIZAÇÃO TECNOLÓGICA, É UMA
@@ -65,7 +67,7 @@
         <img id="essaimagem" src="assets/essaimagem.PNG">
         <div class="fundocinza">
             <h1 id="modulostitulo" class="fundocinza">MÓDULOS DO SISTEMA</h1>
-            <img id="modulos" src="assets/modulosagua.png">
+            <img id="modulos" src="assets/modulos.png">
         </div>
         <div class="fundocinza">
             <div class="container">
@@ -264,44 +266,42 @@
         <!--Fim do terror da grid-->
     </div>
     <div id="quemsomos" class="fundocinza">
-        <div>
-            <img class="linedata" src="assets/linedata.png">
-            <div class="textolinedata1">
-                A Linedata® é uma empresa <span style="font-size:xx-large; color:green">BRASILEIRA</span> de
-                inovação e tecnologia em crescente
-                participação no mercado, especializada no desenvolvimento de soluções para companhias de
-                saneamento básico
-            </div>
-            <div class="textolinedata2">
+        <div class="row">
+            <img class="linedata col-4" src="assets/linedata.png">
+            <div class="textolinedata2 col-4">
                 Nossa <span style="font-size:xx-large; color:blue">PROPOSTA DE VALOR</span> consiste em
                 oferecer soluções que elevem a gestão operacional dos nossos
                 clientes, aumentando sua produtividade e melhorando seus
                 resultados
             </div>
+            <div class="textolinedata1 col-4">
+                A Linedata® é uma empresa <span style="font-size:xx-large; color:green">BRASILEIRA</span> de
+                inovação e tecnologia em crescente
+                participação no mercado, especializada no desenvolvimento de soluções para companhias de
+                saneamento básico
+            </div>
         </div>
-        <div style="overflow:hidden">
-            <img class="mapabrasil pb-5" src="assets/mapabrasil.png">
-            <div class="textomapa1">
+        <!--<div class="textomapa1 row">
                 Desde 2007 conseguimos reduzir o índice de perdas
                 alcançando eficiência energética e operacional, por
                 meio da tecnologia
             </div>
-            <div class="textomapa2">
-                Mais de <span style="font-size:xxx-large; color:rgb(0,67,96)">14 cidades</span> no Brasil
+            <div class="textomapa2 row">
+                Mais de <span style="font-size:xx-large; color:rgb(0,67,96)">14 cidades</span> no Brasil
             </div>
-            <div class="textomapa3">
-                Mais de <span style="font-size:xxx-large; color:rgb(0,67,96)">1.300.000</span> ligações assistidas
+            <div class="textomapa3 row">
+                Mais de <span style="font-size:xx-large; color:rgb(0,67,96)">1.300.000</span> ligações assistidas
             </div>
-            <div class="textomapa4">
-                Mais de <span style="font-size:xxx-large; color:rgb(0,67,96)">30 mil km</span> em redes de águas e
+            <div class="textomapa4 row">
+                Mais de <span style="font-size:xx-large; color:rgb(0,67,96)">30 mil km</span> em redes de águas e
                 esgoto gerenciadas
-            </div>
-        </div>
-        <div class="pt-4 mt-4"></div>
+            </div>-->
+        <img class="mapabrasil" src="assets/mapabrasiltexto.PNG">
         <div class="logos">
             <div class="textosolto">
                 Corpo técnico e de engenharia com <span
-                    style="font-size:xxx-large; color:rgb(0,67,96)">especialistas</span> em operação de redes
+                    style="font-size:xxx-large; color:rgb(0,67,96)">especialistas</span>
+                em operação de redes
                 hidráulicas, recursos hídricos e avaliação de perdas
             </div>
             <img class="linhaazul" src="assets/linhaazul.PNG">
@@ -316,14 +316,13 @@
             </div>
         </div>
         <div class="row evo">
-            <div class="textoevo col-4 offset-md-3">
+            <div class="textoevo col-4 offset-md-4">
                 <b style="color:rgb(0,67,96)">Certificação internacional</b> - Protocolo
                 Internacional de Medição e Verificação de
                 Performance (Certificação EVO)
             </div>
-            <img class="logoevo col-5" src="assets/logoevo.png">
+            <img class="logoevo col-4 offset" src="assets/logoevo.png">
         </div>
-        <div class="line"></div>
 
         <div class="row">
             <img class="circulo1 col-4" src="assets/circulo1.PNG">
@@ -335,10 +334,7 @@
             </div>
         </div>
     </div>
-    </div>
-    </div>
-    <div class="line"></div>
-    <div class="row" id="contato" style="padding-top:100px;">
+    <div class="row" id="contato">
         <img class="col-3" src="assets/contato.PNG">
 
         <form class="col-6 formulario">
@@ -350,9 +346,8 @@
             <input type="submit" value="Enviar Mensagem">
 
         </form>
-        <a class="zapzap col-2" href="https://wa.me/5548991690167" style="color:white; background-color:green">Fale
-            conosco no WhatsApp!!
-            <i class="fab fa-whatsapp" style="color:white; font-size:xx-large"></i>
+        <a class="zapzap col-2" href="https://wa.me/5548991690167"> 
+            <i class="fab fa-whatsapp" style="color:green; font-size:xxx-large"></i>
         </a>
     </div>
 </body>
