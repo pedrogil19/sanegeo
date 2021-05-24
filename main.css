@@ -339,6 +339,11 @@ color:rgb(60,106,179);
     width: 40%;
 }
 
+.agualateral {
+    position: relative;
+    bottom: 200px;
+}
+
 .textolinedata1 {
     font-size: large;
     position: relative;
