@@ -340,8 +340,10 @@ color:rgb(60,106,179);
 }
 
 .agualateral {
+    float:right;
+    height:0;
     position: relative;
-    bottom: 200px;
+    bottom: 100px;
 }
 
 .textolinedata1 {
