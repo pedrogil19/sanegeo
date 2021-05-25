@@ -197,7 +197,6 @@ iframe {
     margin-left: auto;
     margin-right: auto;
     width: 55%;
-    padding-top: 100px;
 }
 
 #modulostitulo {
@@ -500,8 +499,8 @@ color:rgb(60,106,179);
 }
 .formulario input {
     width: 43%;
-    padding: 12px 20px;
-    margin: 8px 20px;
+    padding: 1.2% 2%;
+    margin: 0.8% 2%;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -509,10 +508,12 @@ color:rgb(60,106,179);
 }
 
 .formulario input[type="textbox"] {
-    width: 91.4%;
+    width: 90.5%;
     height: 30%;
-    padding: 12px 20px;
-    margin: 8px 20px;
+    /* padding: 12px 20px;
+    margin: 8px 20px; */
+    padding: 1.2% 2%;
+    margin: 0.8% 2%;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -520,9 +521,9 @@ color:rgb(60,106,179);
 }
 
 .formulario input[type="submit"] {
-    width: 91.4%;
-    padding: 12px 20px;
-    margin: 8px 20px;
+    width: 90.5%;
+    padding: 1.2% 2%;
+    margin: 0.8% 2%;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
