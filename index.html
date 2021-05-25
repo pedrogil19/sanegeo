@@ -10,6 +10,12 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+<script>
+    function play(){document.getElementById('vidwrap').innerHTML =
+  '<iframe width="480" height="360" src="https://www.youtube.com/embed/UnUvm4Mr5WA?autoplay=1" frameborder="0"></iframe>';}
+</script>
+
 </head>
 
 <body>
@@ -24,10 +30,10 @@
         </div>
     </div>
     <div id="home" class="home">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/UnUvm4Mr5WA" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe></a>
+            <div onclick="play();" class="vidwrap" id="vidwrap"></div>
+
+        <!--    <iframe class="videoIframe js-videoIframe" src="https://www.youtube.com/embed/UnUvm4Mr5WA" frameborder="0" allowTransparency="true"
+             allowfullscreen data-src="h?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>-->
     </div>
     <br>
     <div id="solucao" class="solucao" style="padding-top: 0px">
@@ -327,7 +333,7 @@
             </div>
             <img class="logoevo col-4" src="assets/logoevo.png">
         </div>
-        
+
 
         <div class="row">
             <img class="circulo1 col-4" src="assets/circulo1.PNG">

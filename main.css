@@ -47,7 +47,7 @@ iframe {
     top:0;
     left:0;
     width:100%; 
-    height:850px;
+    height:650px;
     padding-top: 80px;
 }
 
@@ -56,6 +56,14 @@ iframe {
         height: 100%;
         width: 100%;
     }
+}
+
+.vidwrap {
+    background: url('assets/video.PNG');    
+    background-repeat: no-repeat;
+    width:100%;
+    height:650px;
+    cursor:pointer;
 }
 
 /* Imagem com os textos lá */
