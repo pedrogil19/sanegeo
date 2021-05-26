@@ -20,7 +20,7 @@
 
 <body>
     <div class="header">
-        <img src="assets/sanegeo_logo.PNG" class="logo">
+        <img src="assets/logo.PNG" class="logo">
         <div class="header-right">
             <a href="#home">Página Inicial</a>
             <a href="#solucao">Solução</a>
@@ -48,7 +48,7 @@
             atualizadas e em tempo real</div>
 
         <div id="box">
-            <div id="texto-legal" class="mb-3">
+            <div id="texto-legal" >
                 TER UM SISTEMA DE GESTÃO OPERACIONAL INTEGRADO É MUITO MAIS QUE ATUALIZAÇÃO TECNOLÓGICA, É UMA
                 NECESSIDADE FRENTE ÀS EXIGÊNCIAS DO NOVO MARCO REGULATÓRIO
             </div>
@@ -203,7 +203,7 @@
             <div class="col-7">
                 <div class="row">
                     <div class="col-12">
-                        <h1 class="result" style="margin-left:-60px;">RESULTADOS</h1>
+                        <h1 class="result mb-3" style="margin-left:-60px;">RESULTADOS</h1>
                     </div>
                     <div class="col-4">
                         <h1 class="grid-item3 azul">65%</h1>
@@ -261,7 +261,7 @@
                     </div>
                     <div class="col-4">
                         <i class="grid-item3 fa-3x icon3 fas fa-chart-pie verde"></i>
-                        <div  id="quemsomos" class="grid-item2">Confiabilidade e
+                        <div class="grid-item2">Confiabilidade e
                             segurança na geração
                             de indicadores
                         </div>
@@ -271,25 +271,13 @@
         </div>
         <!--Fim do terror da grid-->
     </div>
-    
+
     <div class="fundocinza">
-        <div class="agualateral">
+        <div id="quemsomos" class="agualateral">
             <img src="assets/agualateral.PNG">
         </div>
-        <div class="row" style="margin-top:-150px;margin-bottom:80px">
-            <img class="linedata col-4 col-md-4" src="assets/linedata.png">
-            <div class="textolinedata2 col-4">
-                Nossa <span style="font-size:xx-large; color:blue">PROPOSTA DE VALOR</span> consiste em
-                oferecer soluções que elevem a gestão operacional dos nossos
-                clientes, aumentando sua produtividade e melhorando seus
-                resultados
-            </div>
-            <div class="textolinedata1 col-4">
-                A Linedata® é uma empresa <span style="font-size:xx-large; color:green">BRASILEIRA</span> de
-                inovação e tecnologia em crescente
-                participação no mercado, especializada no desenvolvimento de soluções para companhias de
-                saneamento básico
-            </div>
+        <div style="margin-top:-150px;margin-bottom:80px">
+            <img class="linedata" src="assets/linedatafull.png">
         </div>
         <!--<div class="textomapa1 row">
                 Desde 2007 conseguimos reduzir o índice de perdas
@@ -325,7 +313,7 @@
                 setores da economia
             </div>
         </div>
-        <div class="row evo" style="margin-bottom: 30px">
+        <div class="row evo" >
             <div class="textoevo col-4 offset-md-4">
                 <b style="color:rgb(0,67,96)">Certificação internacional</b> - Protocolo
                 Internacional de Medição e Verificação de
@@ -353,6 +341,8 @@
             <input type="email" id="email" placeholder="E-mail" required><br>
             <input type="number" id="phone" name="phone" placeholder="Telefone" required>
             <input type="text" id="empresa" placeholder="Empresa"><br>
+            <input type="text" id="cidade" placeholder="Cidade">
+            <input type="text" id="endereço" placeholder="Endereço"><br>
             <input type="textbox" id="mensagem" placeholder="Mensagem"><br>
             <input type="submit" value="Enviar Mensagem">
 
