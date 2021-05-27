@@ -210,7 +210,7 @@ iframe {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 50%;
     border: 10px solid transparent;
     padding-top: 15px;
     border-image: url(assets/agua.png) 30 stretch;
@@ -489,15 +489,19 @@ color:rgb(60,106,179);
 }
 
 .circulo2 {
-    float: right;
     margin: auto;
+}
+
+.circulo2 img {
+    float: right;
 }
 
 .circulo3 {
     margin: auto;
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center; 
+    margin-top: -5%;
 }
 /* Página de Contato */
 
@@ -549,9 +553,9 @@ color:rgb(60,106,179);
     margin: auto;
     text-decoration: none;
     text-align: center;
-    padding-top: 33%;
+    padding-top: 31%;
 }
 
 .zapicone {
-    width: 40%;
+    width: 20%;
 }
