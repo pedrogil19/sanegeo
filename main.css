@@ -486,6 +486,10 @@ color:rgb(60,106,179);
 
 .circulo1 {
     margin: auto;
+
+}
+
+.circulo1 img {
 }
 
 .circulo2 {
@@ -501,7 +505,10 @@ color:rgb(60,106,179);
     display: flex;
     justify-content: center;
     align-items: center; 
-    margin-top: -5%;
+    margin-top: -12%;
+}
+
+.circulo3 img {
 }
 /* Página de Contato */
 
@@ -553,7 +560,7 @@ color:rgb(60,106,179);
     margin: auto;
     text-decoration: none;
     text-align: center;
-    padding-top: 31%;
+    padding-top: 28%;
 }
 
 .zapicone {
