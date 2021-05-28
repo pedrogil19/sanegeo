@@ -58,6 +58,18 @@ iframe {
     }
 }
 
+
+.play {
+
+}
+
+.play img {
+    width: 30%;
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto;    
+}
+
 .vidwrap {
     background: url('assets/video.PNG');    
     background-repeat: no-repeat;
@@ -71,6 +83,7 @@ iframe {
     position: relative;
     float: left;
 }
+
 
 .circuloazul {
     position: relative;
