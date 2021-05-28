@@ -58,24 +58,34 @@ iframe {
     }
 }
 
-
-.play {
-
+@media screen and (max-width:768px) {
+    iframe {
+        width: 100%;
+    }
+    .vidwrap {
+        width:100%;
+        background: url('assets/video.PNG');    
+    }
+    
+    .play {
+        display:none !important;
+    }      
 }
 
 .play img {
     width: 30%;
+    margin-top: 9%;
     display: block;  
     margin-left: auto;  
-    margin-right: auto;    
+    margin-right: auto;   
 }
 
 .vidwrap {
-    background: url('assets/video.PNG');    
-    background-repeat: no-repeat;
     width:100%;
     height:650px;
     cursor:pointer;
+    background: url('assets/video.PNG');    
+    background-repeat: no-repeat;
 }
 
 /* Imagem com os textos lá */
@@ -94,9 +104,17 @@ iframe {
 
 @media (max-width: 1200px) {
     #velholista {
-        display:none;
+        display:none !important;
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    #velholista {
+        display:none !important;
+    }
+}
+
 
 #texto1 {
     font-size: larger;
@@ -502,9 +520,6 @@ color:rgb(60,106,179);
 
 }
 
-.circulo1 img {
-}
-
 .circulo2 {
     margin: auto;
 }
@@ -519,9 +534,6 @@ color:rgb(60,106,179);
     justify-content: center;
     align-items: center; 
     margin-top: -12%;
-}
-
-.circulo3 img {
 }
 /* Página de Contato */
 
@@ -573,7 +585,9 @@ color:rgb(60,106,179);
     margin: auto;
     text-decoration: none;
     text-align: center;
-    padding-top: 28%;
+    margin: auto;   
+    margin-right: 7%;
+    padding: 4em 1.5em;
 }
 
 .zapicone {
