@@ -423,7 +423,6 @@ color:rgb(60,106,179);
     justify-content: center;
     word-wrap: break-word;
     text-align: center;
-    margin-left: -30px;
     padding: 20px 30px 5px 10px;
   }
 
@@ -443,6 +442,16 @@ color:rgb(60,106,179);
     .grid-item2 {
         text-align: center;
         display: block;
+        padding-left: 10%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .result {
+        margin-left:-60px;
+    }
+    .grid-item3 {
+        margin-left: -30px;
     }
 }
 
