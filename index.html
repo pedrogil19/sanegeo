@@ -11,14 +11,64 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-<script>
-    function play(){document.getElementById('vidwrap').innerHTML =
-  '<iframe width="480" height="360" src="https://www.youtube.com/embed/UnUvm4Mr5WA?autoplay=1" frameborder="0" allow="autoplay"></iframe>';}
-</script>
-
+    <script>
+        function play() {
+            document.getElementById('vidwrap').innerHTML =
+                '<iframe width="480" height="360" src="https://www.youtube.com/embed/UnUvm4Mr5WA?autoplay=1" frameborder="0" allow="autoplay"></iframe>';
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!--Navbar-->
+    <nav class="headermobi navbar-light light-blue lighten-4">
+
+        <!-- Navbar brand -->
+        <img src="assets/logo.PNG" class="logo">
+
+        <!-- Collapse button -->
+        <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+            aria-label="Toggle navigation" style="float:right; margin-right:10%;margin-top:5%;"><span class="dark-blue-text"><i
+                    class="fas fa-bars fa-1x"></i></span></button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Página Inicial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#solucao">Solução</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#resultados">Resultados</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#quemsomos2">Quem Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+            </ul>
+            <!-- Links -->
+
+        </div>
+        <!-- Collapsible content -->
+
+    </nav>
+    <!--/.Navbar-->
     <div class="header">
         <img src="assets/logo.PNG" class="logo">
         <div class="header-right">
@@ -30,11 +80,14 @@
         </div>
     </div>
     <div id="home" class="home">
-            <div onclick="play();" class="vidwrap" id="vidwrap">
-                <div class="row play">
-                    <div class="col-12 my-auto"><img class="col" src="assets/play.gif"></div>
-                </div>
+        <div onclick="play();" class="vidwrap" id="vidwrap">
+            <div class="row play">
+                <div class="col-12 my-auto"><img class="col" src="assets/play.gif"></div>
             </div>
+
+        </div>
+        <!-- Mobile --><iframe class="mobilevid" width="480" height="360"
+            src="https://www.youtube.com/embed/UnUvm4Mr5WA" frameborder="0" allow="autoplay"></iframe>
     </div>
     <br>
     <div id="solucao" class="solucao" style="padding-top: 0px">
@@ -47,29 +100,42 @@
             gestão da operação, manutenção e o planejamento da
             evolução de redes de água e esgoto com informações
             atualizadas e em tempo real</div>
-
+        <!-- Mobile --> <img class="velho" src="assets/velholista.jpg">
         <div id="box">
-            <div id="texto-legal" >
+            <div id="texto-legal">
                 TER UM SISTEMA DE GESTÃO OPERACIONAL INTEGRADO É MUITO MAIS QUE ATUALIZAÇÃO TECNOLÓGICA, É UMA
                 NECESSIDADE FRENTE ÀS EXIGÊNCIAS DO NOVO MARCO REGULATÓRIO
             </div>
         </div>
 
-        <div class="row">
-            <div class="row">
-                <div class="textosala1 col-4 offset-md-1">
+        <div class="row tech">
+            <div class="row tech">
+                <div class="textosala1 textotech col-4 offset-md-1">
                     Viabilizando a montagem de um centro de operação
                     integrado, com efetivo controle das redes, eficiência e
                     qualidade nos serviços prestados aos clientes
                 </div>
                 <img class="techroom col-7 offset-md-5" src="assets/dataimage.png">
-                <div class="textosala2 col-4 ">
+                <div class="textosala2 textotech col-4 ">
                     Com integração, digitalização e consolidação de dados
                     físicos das redes de água e esgoto, realidade que não se
                     verifica na maioria das empresas no Brasil
                 </div>
             </div>
         </div>
+        <div class="textomobile">
+            <div class="textotech">
+                Com integração, digitalização e consolidação de dados
+                físicos das redes de água e esgoto, realidade que não se
+                verifica na maioria das empresas no Brasil
+            </div>
+            <div class="textotech">
+                Viabilizando a montagem de um centro de operação
+                integrado, com efetivo controle das redes, eficiência e
+                qualidade nos serviços prestados aos clientes
+            </div>
+        </div>
+
 
         <img id="essaimagem" src="assets/essaimagem.PNG">
         <div class="fundocinza">
@@ -198,69 +264,70 @@
     <div class="resultados fundocinza" id="resultados">
         <!--Um monte de coisa de grid e coluna-->
         <div class="row ipadgrid">
-            <div class="ipad col-5">
+            <div class="ipad col-lg-5 col-md-12 col-sm-12">
                 <img class="ipadimg" src="assets/ipad.png">
             </div>
-            <div class="col-7">
+            <div class="col-lg-7 col-md-12 col-sm-12">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
                         <h1 class="result mb-3" style="margin-left:-60px;">RESULTADOS</h1>
                     </div>
-                    <div class="col-4">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
                         <h1 class="grid-item3 azul">65%</h1>
                         <div class="grid-item2">menos das perdas reais
                             provenientes da distribuição
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
                         <h1 class="grid-item3 azul">30%</h1>
                         <div class="grid-item2">de redução nos custos de
                             deslocamento de turmas e
                             veículos
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
                         <h1 class="grid-item3 azul">20%</h1>
                         <div class="grid-item2">de redução nos custos de
                             materiais e produtos
                             químicos
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
                         <i class="grid-item3 fa-3x icon3 fas fa-bullhorn azulclaro"></i>
                         <div class="grid-item2">Rede de águas inteligentes,
                             detectando/prevenindo
                             vazamentos e emitindo alertas
                         </div>
                     </div>
-                    <div class="col-4">
-                        <h1 class="grid-item3 azulclaro">30%</h1>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <h1 class="grid-item3 azulclaro col-sm-12">30%</h1>
                         <div class="grid-item2">de redução no tempo de
                             atendimento das
                             ocorrências
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
                         <i class="grid-item3 fa-3x icon3 fas fa-map-marked-alt azulclaro"></i>
                         <div class="grid-item2">Preparo para atender as
                             normas e exigências de
                             Agências Reguladoras
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
                         <i class="grid-item3 fa-3x icon3 fas fa-coins verde"></i>
                         <div class="grid-item2">Eficiência na cobrança de
                             serviços aos clientes
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
                         <i class="grid-item3 fa-3x icon3 fas fa-clipboard verde"></i>
                         <div class="grid-item2">Controle da cadeia de
                             clientes através do
                             georreferenciamento
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div id="quemsomos2"></div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
                         <i class="grid-item3 fa-3x icon3 fas fa-chart-pie verde"></i>
                         <div class="grid-item2">Confiabilidade e
                             segurança na geração
@@ -296,48 +363,110 @@
                 esgoto gerenciadas
             </div>-->
         <img class="mapabrasil" style="margin-bottom:20px" src="assets/mapabrasiltexto.PNG">
-        <div class="logos">
-            <div class="textosolto">
-                Corpo técnico e de engenharia com <span
-                    style="font-size:xxx-large; color:rgb(0,67,96)">especialistas</span>
-                em operação de redes
-                hidráulicas, recursos hídricos e avaliação de perdas
+        <div class="circlogos">
+            <div class="logos">
+                <div class="textosolto">
+                    Corpo técnico e de engenharia com <span
+                        style="font-size:xxx-large; color:rgb(0,67,96)">especialistas</span>
+                    em operação de redes
+                    hidráulicas, recursos hídricos e avaliação de perdas
+                </div>
+                <img class="linhaazul" src="assets/linhaazul.PNG">
             </div>
-            <img class="linhaazul" src="assets/linhaazul.PNG">
-        </div>
-        <div class="row">
-            <img class="col-5 logoaneel g-0" src="assets/logoaneel.png">
-            <div class="textoaneel col-7">
-                Parte do <b style="color:rgb(0,67,96)">PEE – Programa de Eficiência
-                    Energética</b>, cujo objetivo é promover o uso
-                eficiente da energia elétrica em todos os
-                setores da economia
+            <div class="row">
+                <img class="col-lg-5 logoaneel g-0" src="assets/logoaneel.png">
+                <div class="textoaneel col-lg-7 col-md-12 col-sm-12">
+                    Parte do <b style="color:rgb(0,67,96)">PEE – Programa de Eficiência
+                        Energética</b>, cujo objetivo é promover o uso
+                    eficiente da energia elétrica em todos os
+                    setores da economia
+                </div>
             </div>
-        </div>
-        <div class="row evo" >
-            <div class="textoevo col-4 offset-md-4">
-                <b style="color:rgb(0,67,96)">Certificação internacional</b> - Protocolo
-                Internacional de Medição e Verificação de
-                Performance (Certificação EVO)
+            <div class="row evo">
+                <div class="textoevo col-lg-4 offset-md-4 col-md-12 col-sm-12">
+                    <b style="color:rgb(0,67,96)">Certificação internacional</b> - Protocolo
+                    Internacional de Medição e Verificação de
+                    Performance (Certificação EVO)
+                </div>
+                <img class="logoevo col-lg-4" src="assets/logoevo.png">
             </div>
-            <img class="logoevo col-4" src="assets/logoevo.png">
-        </div>
-
-
-        <div class="row"> 
-            <div class="circulo1 col"><img src="assets/circulo1.PNG"></div>
-            <div class="circulo2 col"><img src="assets/circulo2.PNG"></div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <img class="circulo3" src="assets/circulo3.PNG">
+            <div class="row">
+                <div class="circulo1 col"><img src="assets/circulo1.PNG"></div>
+                <div class="circulo2 col"><img src="assets/circulo2.PNG"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img class="circulo3" src="assets/circulo3.PNG">
+                </div>
             </div>
         </div>
     </div>
+    <!-- Mobile -->
+    <div class="logosmobile">
+        <div>
+            Corpo técnico e de engenharia com <b style="color:rgb(0,67,96)">especialistas</b>
+            em operação de redes
+            hidráulicas, recursos hídricos e avaliação de perdas
+        </div><br>
+        <img src="assets/aneel.png" style="max-width:80%; margin:10% 0%">
+        <div>
+            Parte do <b style="color:rgb(0,67,96)">PEE – Programa de Eficiência
+                Energética</b>, cujo objetivo é promover o uso
+            eficiente da energia elétrica em todos os
+            setores da economia
+        </div><br>
+        <img src="assets/evo.png" style="max-width:80%;margin:10% 0%">
+        <div><b style="color:rgb(0,67,96)">Certificação internacional</b> - Protocolo
+            Internacional de Medição e Verificação de
+            Performance (Certificação EVO)
+        </div>
+    </div>
+    <div class="circulosmobile">
+        <blockquote>
+            O sistema de gestão operacional Sanegeo,
+            que possibilita o acesso às informações em
+            tempo real, nos possibilitou um
+            atendimento ao consumidor muito mais
+            rápido e eficiente.
+        </blockquote>
+        <div>
+            Vladimir Condé Responsável pela área
+            operacional CESAMA/Juiz de Fora/MG
+        </div>
+        <blockquote>
+            O sistema Sanegeo é rápido e fácil
+            de utilizar. Com ele foi possível
+            diminuir consideravelmente as
+            nossas perdas energéticas.
+        </blockquote>
+        <div>
+            Leone Willman
+            Diretor Técnico do SAAE/Barretos/SP
+        </div>
+        <blockquote>
+            O sistema Sanegeo possibilita a
+            distribuição técnica com despacho
+            de serviço remoto na palma da
+            mão.
+        </blockquote>
+        <div>
+            Rovério Pagotto
+            Gerente de Planejamento da
+            SANASA/Campinas/SP
+        </div>
+    </div>
+    <!-- /Mobile -->
     <div class="row" id="contato">
-        <img class="col-3" src="assets/contato.PNG">
-
-        <form class="col-6 formulario">
+        <img class="col-lg-3 contact" src="assets/contato.PNG">
+        <!--Mobile-->
+        <div class="zapzapmobi col-md-12">
+            <a href="https://wa.me/5548991690167">
+                <span>Fale conosco no WhatsApp!!</span>
+                <img class="zapicone" src="assets/zapicone.png">
+            </a>
+        </div>
+        <!--/Mobile-->
+        <form class="col-lg-6 col-md-12 formulario">
             <input type="text" id="name" placeholder="Nome" required>
             <input type="email" id="email" placeholder="E-mail" required><br>
             <input type="number" id="phone" name="phone" placeholder="Telefone" required>
@@ -346,15 +475,14 @@
             <input type="text" id="estado" placeholder="Estado"><br>
             <input type="textbox" id="mensagem" placeholder="Mensagem"><br>
             <input type="submit" value="Enviar Mensagem">
-
         </form>
-        <div class="zapzap col-2 mt-5">
-            <a  href="https://wa.me/5548991690167">
-                Fale conosco no WhatsApp!!
+        <div class="zapzap col-lg-2 col-md-12 mt-5">
+            <a href="https://wa.me/5548991690167">
+                <span>Fale conosco no WhatsApp!!</span>
                 <img class="zapicone" src="assets/zapicone.png">
             </a>
         </div>
-        
+
     </div>
 </body>
 
