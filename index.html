@@ -26,11 +26,23 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script>
+        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("navbar").style.padding = "30px 10px 10px 10px";
+            } else {
+                document.getElementById("navbar").style.padding = "30px 10px 10px 10px";
+            }
+        }
+    </script>
 </head>
 
 <body>
     <!--Navbar-->
-    <nav class="headermobi navbar-light light-blue lighten-4">
+    <nav id="navbar" class="headermobi navbar-light light-blue lighten-4">
 
         <!-- Navbar brand -->
         <img src="assets/logo.PNG" class="logo">
@@ -38,8 +50,8 @@
         <!-- Collapse button -->
         <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
-            aria-label="Toggle navigation" style="float:right; margin-right:10%;margin-top:5%;"><span class="dark-blue-text"><i
-                    class="fas fa-bars fa-1x"></i></span></button>
+            aria-label="Toggle navigation" style="float:right; margin-right:10%;margin-top:5%;"><span
+                class="dark-blue-text"><i class="fas fa-bars fa-1x"></i></span></button>
 
         <!-- Collapsible content -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent1">
@@ -326,7 +338,7 @@
                             georreferenciamento
                         </div>
                     </div>
-                    <div  id="quemsomos2" class="col-lg-4 col-md-12 col-sm-12">
+                    <div id="quemsomos2" class="col-lg-4 col-md-12 col-sm-12">
                         <i class="grid-item3 fa-3x icon3 fas fa-chart-pie verde"></i>
                         <div class="grid-item2">Confiabilidade e
                             segurança na geração
@@ -458,7 +470,7 @@
     <div class="row" id="contato">
         <img class="col-lg-3 contact" src="assets/contato.PNG">
         <!--Mobile-->
-        
+
         <!--/Mobile-->
         <form class="col-lg-6 col-md-12 formulario">
             <div class="zapzapmobi">
