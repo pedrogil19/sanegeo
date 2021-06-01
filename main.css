@@ -814,6 +814,7 @@ color:rgb(60,106,179);
         box-sizing: border-box;
         background-color:rgb(50, 185, 201);
         color: white;
+        margin-bottom: 300px;
     }
     .zapzap {
         display: none;
