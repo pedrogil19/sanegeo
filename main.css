@@ -438,11 +438,19 @@ color:rgb(60,106,179);
     padding: 30px 30px 0px 30px;
 }
 
+.grid-item {
+    padding-bottom: 10px;
+} 
+
 @media only screen and (max-width:768px) {
     .grid-item2 {
         text-align: center;
         display: block;
         padding-left: 10%;
+    }
+
+    .ipadgrid h1 {
+        font-size: xxx-large;
     }
 }
 
@@ -785,10 +793,29 @@ color:rgb(60,106,179);
     display: none;
 }
 
+.meialua {
+    display:none;
+}
+
 @media only screen and (max-width:768px) {
     .contact {
         display: none;
     }
+    .meialua {
+        display: block;
+        margin: auto;
+        line-height: 100px;
+        text-align: center;
+        height: 100px;
+        background-color: rgb(50, 185, 201);
+        border-bottom-left-radius: 90%;
+        border-bottom-right-radius: 90%;
+        border: rgb(50, 185, 201);
+        font-size: x-large;
+        color: white;
+        margin-bottom: -50px;
+    }
+
     .formulario input {
         width: 90%;
         padding: 3% 2%;
