@@ -52,6 +52,7 @@ body {
         display:inline;
         background-color: white;
         width: 100%;
+        z-index: 30;
     }
     .logo {
         width: 50%;
@@ -79,6 +80,9 @@ iframe {
     display: none;
 }
 
+.vidwrapMobile {
+    display: none;
+}
 
 @media only screen and (max-width:768px) {
     .home {
@@ -88,6 +92,7 @@ iframe {
         display:none;
     }  
     .vidwrapMobile {
+        display: block;
         cursor:pointer;
         background: url('assets/videoMobile.PNG');   
         background-size: 100%; 
@@ -163,6 +168,13 @@ iframe {
     color: rgb(89, 89, 89);
 }
 
+.conector1 {
+    display: none;
+}
+.conector2 {
+    display:none;
+}
+
 @media only screen and (max-width: 768px){
     .velholista {
         display:none !important;
@@ -176,15 +188,13 @@ iframe {
         word-wrap: break-word;
         color: rgb(89, 89, 89);
         text-align: center;
-        padding-bottom: 100px;
     }
     #texto2 {
         position:static;
-        padding-bottom: 100px;
         max-width: 100%;
-    }
-    .velholista {
-        display:none !important;
+        top: 0;
+        left: 0;
+        text-align: center;
     }
     .velho {
         display: block;
@@ -193,21 +203,19 @@ iframe {
     .circuloazul {
         display: none;
     }
-}
-
-
-
-@media (max-width: 1200px){
-    #texto2 {
-        float: left;
-        top: 0;
-        left: 0;
-        padding-top: 30px;
-        font-size: larger;
-        max-width: 400px;
-        word-wrap: break-word;
-        color: rgb(89, 89, 89);
-        text-align: center;
+    .conector1 {
+        display: inline;
+    }
+    .conector1 img {
+        width: 65%;
+    }
+    .conector2 {
+        display: inline;
+        float: right;
+        overflow: hidden;
+    }
+    .conector2 img {
+        width: 100%;
     }
 }
 
@@ -266,6 +274,10 @@ iframe {
     visibility: hidden;
 }
 
+.datamobile {
+    display: none;
+}
+
 @media only screen and (max-width: 768px) {
     .tech {
         display: none !important;
@@ -281,6 +293,12 @@ iframe {
         word-wrap: break-word;
         text-align:center;
         margin-top: 100px;
+    }
+    .datamobile {
+        display: block;
+    }
+    .datamobile img {
+        max-width: 100%;
     }
 }
 
@@ -405,13 +423,6 @@ color:rgb(60,106,179);
 .ipadgrid {
     padding-top: 100px;
 }
-
-@media screen and (max-width: 1200px) {
-    .ipad {
-        display: none;
-    }
-}
-
 .ipad {
     position: relative;
 }
@@ -466,6 +477,26 @@ color:rgb(60,106,179);
 
     .ipadgrid h1 {
         font-size: xxx-large;
+    }
+    .ipad {
+        text-align: center;
+    }
+    .ipadimg {
+        height: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+
+@media only screen and (max-width:468px) {
+    .ipadimg {
+        height: 50%;
+        max-width: 100%;
+        padding: 0;
+    }
+    .ipad {
+        margin-bottom: -100%;
     }
 }
 
