@@ -81,12 +81,27 @@ iframe {
 
 
 @media only screen and (max-width:768px) {
+    .home {
+        padding-top: 150px;
+    }
     .vidwrap {
         display:none;
-    }    
-    .play {
+    }  
+    .vidwrapMobile {
+        cursor:pointer;
+        background: url('assets/videoMobile.PNG');   
+        background-size: 100%; 
+        background-repeat: no-repeat;
+    }   
+    /* .play {
         display:none !important;
-    } 
+    }  */
+    .playMobile img {
+        width: 50%;
+        display: block;  
+        margin-left: auto;  
+        margin-right: auto;   
+    }
     .mobilevid {
         display: inline-block;
         padding-top: 150px;

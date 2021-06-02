@@ -16,6 +16,11 @@
             document.getElementById('vidwrap').innerHTML =
                 '<iframe width="480" height="360" src="https://www.youtube.com/embed/UnUvm4Mr5WA?autoplay=1" frameborder="0" allow="autoplay"></iframe>';
         }
+        function playMobile() {
+            document.getElementById('vidwrapMobile').style.background = 'none';
+            document.getElementById('vidwrapMobile').innerHTML =
+                '<iframe width="560" height="315" src="https://www.youtube.com/embed/UnUvm4Mr5WA?autoplay=1" frameborder="0" allow="autoplay"></iframe>';
+        }
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -98,8 +103,16 @@
             </div>
 
         </div>
-        <!-- Mobile --><iframe class="mobilevid" width="480" height="360"
-            src="https://www.youtube.com/embed/UnUvm4Mr5WA" frameborder="0" allow="autoplay"></iframe>
+        <!-- Mobile -->
+        <!-- <iframe class="mobilevid" width="480" height="360"
+            src="https://www.youtube.com/embed/UnUvm4Mr5WA" frameborder="0" allow="autoplay">
+        </iframe> -->
+        <div onclick="playMobile();" class="vidwrapMobile" id="vidwrapMobile">
+            <div class="row playMobile">
+                <div class="col-12 my-auto"><img class="col" src="assets/play.gif"></div>
+            </div>
+
+        </div>
     </div>
     <br>
     <div id="solucao" class="solucao" style="padding-top: 0px">
