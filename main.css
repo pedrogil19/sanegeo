@@ -74,7 +74,9 @@ iframe {
         width: 100%;
     }
 }
-
+.home-texto {
+    display: none;
+}
 
 .mobilevid {
     display: none;
@@ -88,6 +90,17 @@ iframe {
     .home {
         padding-top: 150px;
     }
+    .home-texto {
+        display: block;
+    }
+    .home-texto p {
+        font-size: 18px;
+    }
+    .home-line {
+        border: 1px solid rgb(0,67,96);
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
     .vidwrap {
         display:none;
     }  
@@ -97,10 +110,7 @@ iframe {
         background: url('assets/videoMobile.PNG');   
         background-size: 100%; 
         background-repeat: no-repeat;
-    }   
-    /* .play {
-        display:none !important;
-    }  */
+    }
     .playMobile img {
         width: 50%;
         display: block;  
@@ -143,6 +153,9 @@ iframe {
     right: 845px;
     opacity:0.3;
 }
+.overlay {
+    display: none;
+}
 
 .velho {
     display: none;
@@ -157,6 +170,16 @@ iframe {
     word-wrap: break-word;
     color: rgb(89, 89, 89);
 }
+.texto1 {
+    font-size: larger;
+    position: relative;
+    top: -380px;
+    left: 850px;
+    max-width: 490px;
+    word-wrap: break-word;
+    color: rgb(89, 89, 89);
+}
+
 #texto2 {
     font-size: larger;
     position: relative;
@@ -189,6 +212,16 @@ iframe {
         color: rgb(89, 89, 89);
         text-align: center;
     }
+    .texto1 {
+        position: static;
+        top: 0;
+        left: 0;
+        max-width: 100%;
+        font-size: larger;
+        word-wrap: break-word;
+        color: rgb(89, 89, 89);
+        text-align: center;
+    }
     #texto2 {
         position:static;
         max-width: 100%;
@@ -203,42 +236,55 @@ iframe {
     .circuloazul {
         display: none;
     }
+    .velho-mobile {
+        width: 100%;
+        background: url('assets/velholista.jpg');
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+    }
+    .overlay {
+        display: flex;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(173,216,230,0.5);
+    }
     .conector1 {
-        display: inline;
+        display: block;
     }
     .conector1 img {
         width: 65%;
     }
     .conector2 {
-        display: inline;
-        float: right;
-        overflow: hidden;
+        display: block;
+        margin-bottom: 2rem;
     }
     .conector2 img {
-        width: 100%;
+        width: 65%;
+        float:right
     }
 }
 
-#box{
-    height: 160px;
-    background-color: rgb(61, 107, 181);
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+.box{
+     
 }
 
-#texto-legal { 
-    max-width: 850px;
-    word-wrap: break-word;
+.texto-legal { 
+    background-color: rgb(61, 107, 181);
+    display: block;
     font-size: larger;
     font-style: italic;
     color: white;
 }
 
 @media only screen and (max-width:768px) {
-    #texto-legal {
+    
+    .texto-legal {
         font-size: medium;
-        text-align: center;
+        width: 100%;
     }
 }
  
@@ -302,19 +348,27 @@ iframe {
     }
 }
 
-#essaimagem {
+.essaimagem {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 55%;
     margin-top: -70px;
 }
+.essaimagem-mobile {
+    display: none;
+}
 
 @media only screen and (max-width: 768px) {
-    #essaimagem {
+    .essaimagem {
+        display: none;
+    }
+    .essaimagem-mobile {
+        display: block;
         width: 100%;
-        margin: auto;
-        margin-top: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
     }
 }
 
@@ -400,7 +454,20 @@ h1{
     word-wrap: break-word;
     font-weight: 200;
 }
-
+.result-mobile {
+    display: none;
+}
+@media only screen and (max-width:768px) {
+    .result {
+        display: none;
+    }
+    .result-mobile {
+        display: flex;
+        justify-content: center;
+        word-wrap: break-word;
+        font-weight: 200;
+    }
+}
 /*
 color:rgb(92,195,173);
 color:rgb(50,185,209);
