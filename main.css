@@ -93,8 +93,12 @@ iframe {
     .home-texto {
         display: block;
     }
-    .home-texto p {
-        font-size: 18px;
+    .home-texto-1 {
+        font-size: 22px;
+    }
+    .home-texto-2 {
+        font-size: 16px;
+        font-style: italic;
     }
     .home-line {
         border: 1px solid rgb(0,67,96);
@@ -552,6 +556,7 @@ color:rgb(60,106,179);
         height: 100%;
         max-width: 100%;
         padding: 0;
+        margin-right: 1%;
     }
 }
 
