@@ -261,10 +261,10 @@ iframe {
     .conector2 {
         display: block;
         margin-bottom: 2rem;
+        text-align: right;
     }
     .conector2 img {
         width: 65%;
-        float:right
     }
 }
 
