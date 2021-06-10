@@ -418,17 +418,6 @@ h1{
     color: rgb(61, 107, 181);
 }
 
-/*.grade {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 10px;
-    padding: 10px;
-}*/ 
-/* Grade 1 */
-
-
-
-
 .grid-item {
   display: flex;
   justify-content: center;
@@ -475,14 +464,11 @@ h1{
         word-wrap: break-word;
         font-weight: 200;
     }
+    .fundoazul-texto {
+        font-size: 1.5rem;
+    }
 }
-/*
-color:rgb(92,195,173);
-color:rgb(50,185,209);
-color:rgb(60,106,179);
-*/
 
-/* Eu sei que as classes não correspondem as cores mas honestamente eu não to nem aí */
 .azul {
     color:rgb(92,195,173);
 }
@@ -625,49 +611,9 @@ color:rgb(60,106,179);
     }
 }
 
-/* Mapa Brasil */
-
 .mapabrasil {
     float: right;
 }
-/*
-
-.textomapa1 {
-    font-size: medium;
-    position: relative;
-    max-width: 1300px;
-    word-wrap: break-word;
-    text-align: right;
-    color: rgb(89, 89, 89);
-    margin: auto;
-}
-
-.textomapa2 {
-    font-size: medium;
-    position: relative;
-    word-wrap: break-word;
-    text-align: right;
-    color: rgb(89, 89, 89); 
-    margin: auto;
-}
-
-.textomapa3 {
-    font-size: medium;
-    position: relative;
-    word-wrap: break-word;
-    text-align: right;
-    color: rgb(89, 89, 89);
-    margin: auto;
-}
-
-.textomapa4 {
-    font-size: medium;
-    position: relative;
-    word-wrap: break-word;
-    text-align: right;
-    color: rgb(89, 89, 89);
-    margin: auto;
-} */
 
 /* Logos com circulos */
 
@@ -768,37 +714,6 @@ color:rgb(60,106,179);
         margin: auto;
         padding-top: 100px;
     }
-    /* .textosolto {
-        position: static;
-        font-size: large;
-        max-width: 600px;
-        word-wrap: break-word;
-        text-align: center;
-        color: rgb(89, 89, 89);
-        margin: auto;
-    }
-    .textoaneel {
-        position: static;
-        font-size: large;
-        max-width: 600px;
-        word-wrap: break-word;
-        text-align: center;
-        color: rgb(89, 89, 89);
-        margin: auto;
-        float: left;
-    }
-    .textoevo {
-        position: static;
-        font-size: large;
-        max-width: 600px;
-        float: left;
-        word-wrap: break-word;
-        text-align: center;
-        color: rgb(89, 89, 89);
-        margin: auto;
-        padding-bottom: 300px;
-    } */
-
 }
 /* Circulos */
 
@@ -868,11 +783,9 @@ color:rgb(60,106,179);
     box-sizing: border-box;
 }
 
-.formulario input[type="textbox"] {
+.formulario textarea {
     width: 90.5%;
     height: 30%;
-    /* padding: 12px 20px;
-    margin: 8px 20px; */
     padding: 1.2% 2%;
     margin: 0.8% 2%;
     display: inline-block;
@@ -881,7 +794,7 @@ color:rgb(60,106,179);
     box-sizing: border-box;
 }
 
-.formulario input[type="submit"] {
+.formulario input[type="button"] {
     width: 90.5%;
     padding: 1.2% 2%;
     margin: 0.8% 2%;
@@ -948,11 +861,9 @@ color:rgb(60,106,179);
         box-sizing: border-box;
     }
     
-    .formulario input[type="textbox"] {
+    .formulario textarea {
         width: 90%;
         height: 25%;
-        /* padding: 12px 20px;
-        margin: 8px 20px; */
         padding: 1.2% 2%;
         margin: 0.8% 2%;
         display: inline-block;
@@ -961,7 +872,7 @@ color:rgb(60,106,179);
         box-sizing: border-box;
     }
     
-    .formulario input[type="submit"] {
+    .formulario input[type="button"] {
         width: 90%;
         padding: 1.2% 2%;
         margin: 2% 2%;

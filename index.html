@@ -22,8 +22,11 @@
                 '<iframe width="560" height="315" src="https://www.youtube.com/embed/UnUvm4Mr5WA?autoplay=1" frameborder="0" allow="autoplay"></iframe>';
         }
     </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" 
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" 
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -41,6 +44,29 @@
             } else {
                 document.getElementById("navbar").style.padding = "30px 10px 10px 10px";
             }
+        }
+    </script>
+    <script>
+        function sendMail(){
+            
+            var urlData = $("#formularioContato").serialize();
+            console.log(urlData);
+            $.ajax({
+                type: "POST",
+                url: "send_email.php",
+                async: true,
+                data: urlData,
+                success: function(data) { /* sucesso */
+                    alert("E-mail enviado!");
+                   
+                },
+                beforeSend: function() { /* antes de enviar */
+                    $('.loading').fadeIn('fast'); /* mostra o loading */
+                },
+                complete: function(){ /* completo */
+                    $('.loading').fadeOut('fast'); /* esconde o loading */
+                }
+            });
         }
     </script>
 </head>
@@ -502,21 +528,21 @@
         <!--Mobile-->
         <div class="meialua">CONTATO</div>
         <!--/Mobile-->
-        <form class="col-lg-6 col-md-12 formulario">
+        <form id="formularioContato" class="col-lg-6 col-md-12 formulario">
             <div class="zapzapmobi">
                 <a href="https://wa.me/5548991690167">
                     <span>Fale conosco no WhatsApp!!</span>
                     <img class="zapicone" src="assets/zapicone.png">
                 </a>
             </div>
-            <input type="text" id="name" placeholder="Nome" required>
-            <input type="email" id="email" placeholder="E-mail" required><br>
-            <input type="number" id="phone" name="phone" placeholder="Telefone" required>
-            <input type="text" id="empresa" placeholder="Empresa"><br>
-            <input type="text" id="cidade" placeholder="Cidade">
-            <input type="text" id="estado" placeholder="Estado"><br>
-            <input type="textbox" id="mensagem" placeholder="Mensagem"><br>
-            <input type="submit" value="Enviar Mensagem">
+            <input type="text" id="name" name="name" placeholder="Nome">
+            <input type="email" id="email" name="email" placeholder="E-mail"><br>
+            <input type="tel" id="phone" name="phone" placeholder="Telefone">
+            <input type="text" id="empresa" name="empresa" placeholder="Empresa"><br>
+            <input type="text" id="cidade" name="cidade" placeholder="Cidade">
+            <input type="text" id="estado" name="estado" placeholder="Estado"><br>
+            <textarea id="mensagem" name="mensagem" placeholder="Mensagem" rows="4" cols="50"></textarea><br>
+            <input type="button" onclick="sendMail()" value="Enviar Mensagem">
         </form>
         <div class="zapzap col-lg-2 col-md-12 mt-5">
             <a href="https://wa.me/5548991690167">
